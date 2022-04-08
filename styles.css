@@ -1,0 +1,60 @@
+body {
+    margin: 0em;
+    font-family: "Inter", sans-serif;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Fjalla One", sans-serif;
+}  
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+img{
+    display: block;
+    margin: auto;
+}
+.slider ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+
+    animation: rotacion 20s infinite alternate;
+}
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+.slider img{
+    width: 80%;
+}
+@keyframes rotacion {
+    0% { margin-left: 0;}
+    20% {margin-left: 0;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -300%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+
+
+}
+.cover{
+    background-image: url(images/portadapagina.jpg);
+    height: 300px;
+    color: white;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+  
+}  
