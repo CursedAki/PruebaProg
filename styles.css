@@ -1,7 +1,21 @@
 body {
     margin: 0em;
     font-family: "Inter", sans-serif;
+
 }
+.card {
+    border: 0 !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    s0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+  
+.card-title {
+    min-height: 2.5rem;
+}
+.card-text {
+    min-height: 1rem;
+}
+  
   
 h1,
 h2,
