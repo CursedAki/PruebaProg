@@ -178,3 +178,19 @@ body.fondo {
     opacity: 0;
     visibility: hidden;
 }
+.submit{
+    padding: 1rem;
+    font-weight: 400;
+    background-color: rgb(54, 54, 54);
+    border-radius: 2rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: .9rem;
+    margin-top: 2rem;
+    transition: all .3s ease-in;
+    color: rgb(255, 255, 255);
+
+
+
+}

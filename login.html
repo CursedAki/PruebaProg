@@ -39,11 +39,15 @@
         <form id="formulario" class="formulario">
             <h2 class="create-account">Crear una cuenta</h2>
             <div class="iconos">
+                <a href="https://www.instagram.com/">
                 <div class="border-icon">
                     <i class='bx bxl-instagram'></i>
+                </a>    
                 </div>
-                <div class="border-icon">
+                <a href="https://es-la.facebook.com/">
+                    <div class="border-icon">
                     <i class='bx bxl-facebook-circle'></i>
+                </a>    
                 </div>
             </div>
             <br>
@@ -70,7 +74,9 @@
                     <input type="radio" name="rbt_genero" id="rbt_genero" value="o"> Otro <br>
                 </td>
             </tr>
-           <input class="submit" type="button" value="Registrarse">
+            <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
+            <button class="submit" type="submit" >Registrarse</button>
+            <script src="validarRUT.js"></script>
         </form>
     </div>
     <!--Termino Registro -->
@@ -81,11 +87,13 @@
             <div class="iconos">
                 <a href="https://www.instagram.com/">
                 <div class="border-icon">
-                    <i class='bx bxl-instagram'></i>
+                    <i class='bx bxl-instagram' ></i>
                 </a>
                 </div>
                 <div class="border-icon">
+                    <a href="https://es-la.facebook.com/">
                     <i class='bx bxl-facebook-circle'></i>
+                    </a>
                 </div>
             </div>
             <br>
@@ -99,7 +107,7 @@
                 <td><input type="text" name="txt_nombre" id="txt_nombre" required></td>
             </tr>
             <a href="index.html">
-            <input type="button" value="Iniciar Sesion ">
+            <button class="submit" type="submit" >Iniciar Sesion</button>
             </a>
         </form>
         <div class="welcome-back">
