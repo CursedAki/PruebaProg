@@ -21,8 +21,6 @@ body.fondo {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
-
 }
 
 .container-form {
@@ -68,7 +66,17 @@ body.fondo {
 
 .formulario {
     width: 400px;
-    height: 850px;
+    height: 666px;
+    padding: 1rem;
+    margin: 5rem;
+    background-color: rgb(51, 51, 51, 0.602);
+    text-align: center;
+    border-radius: 50px;
+}
+
+.formulario2 {
+    width: 400px;
+    height: 450px;
     padding: 1rem;
     margin: 5rem;
     background-color: rgb(51, 51, 51, 0.602);
@@ -150,7 +158,7 @@ body.fondo {
 }
 
 .formulario input[type="button"] {
-    width: 60%;
+    width: 100%;
     margin: auto;
     border: solid thin rgb(54, 54, 54);
     padding: .7rem;
@@ -178,7 +186,8 @@ body.fondo {
     opacity: 0;
     visibility: hidden;
 }
-.submit{
+
+.submit {
     padding: 1rem;
     font-weight: 400;
     background-color: rgb(54, 54, 54);
@@ -190,7 +199,4 @@ body.fondo {
     margin-top: 2rem;
     transition: all .3s ease-in;
     color: rgb(255, 255, 255);
-
-
-
 }

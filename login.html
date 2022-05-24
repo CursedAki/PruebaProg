@@ -26,11 +26,12 @@
 </script>
 
 <body class="fondo">
+    <a href="index.html"><img src="images/logo.jpg" width="50" height="50" alt="logo"></a>
     <div class="container-form sign-up">
         <div class="welcome-back">
             <div class="message">
                 <h2>Bienvenido/a</h2>
-                <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
+                <p>INICIAR SESION COMO INVITADO</p>
                 <button class="btncolor">Iniciar Sesion</button>
                 <!-- boton que da el movimiento -->
             </div>
@@ -43,49 +44,44 @@
                 <div class="border-icon">
                     <i class='bx bxl-instagram'></i>
 
-=======
                 </a>
                 </div>
                 <a href="https://www.facebook.com/">
                 <div class="border-icon">
                     <i class='bx bxl-facebook-circle'></i>
                 </a>
->>>>>>> e8688e36fc8e899fe42b9c56cbacf5a3a464e31d
+
                 </div>
             </div>
             <br>
             <br>
             <tr>
-                <td><label for="txt_nombre">Nombre completo</label></td>
+                <td><label for="txt_nombre">Nombre</label></td>
                 <td><input type="text" name="txt_nombre" id="txt_nombre" required></td>
             </tr>
             <tr>
-                <td><label for="txt_nombre">Nombre de usuario</label></td>
+                <td><label for="txt_nombre">Nombre De Usuario</label></td>
                 <td><input type="text" name="txt_nombre" id="txt_nombre" required></td>
             </tr>
             <tr>
-                <td><label for="txt_mail">Correo electronico</label></td>
+                <td><label for="txt_mail">Correo Electronico</label></td>
                 <td><input type="email" name="txt_mail" id="txt_mail" required></td>
             </tr>
-            <br>
+            <!-- Verificacion Rut (Modulo 11)-->
             <tr>
-                <td>Seleccion su genero</td>
+                <td> <label for="checkRut">Ingrese su rut</label></td>
+                <input type="text" id="rut" name="rut" required oninput="checkRut(this)">
                 <br>
-                <td>
-                    <input type="radio" name="rbt_genero" id="rbt_genero" value="m"> Masculino <br>
-                    <input type="radio" name="rbt_genero" id="rbt_genero" value="f"> Femenino <br>
-                    <input type="radio" name="rbt_genero" id="rbt_genero" value="o"> Otro<br>
-                </td>
+                <button class="submit" type="submit" >Registrarse</button>
+                <script src="validarRUT.js"></script>
             </tr>
-            <input type="text" id="rut" name="rut" required oninput="checkRut(this)" placeholder="Ingrese RUT">
-            <button class="submit" type="submit" >Registrarse</button>
-            <script src="validarRUT.js"></script>
         </form>
     </div>
     <!--Termino Registro -->
 
+    <!-- Inicio Sesion -->
     <div class="container-form sign-in">
-        <form class="formulario">
+        <form id="formulario2" class="formulario">
             <h2 class="create-account">Iniciar Sesion</h2>
             <div class="iconos">
                 <a href="https://www.instagram.com/">
@@ -105,11 +101,7 @@
             <br>
             <br>
             <tr>
-                <td><label for="txt_nombre">Usuario</label></td>
-                <td><input type="text" name="txt_nombre" id="txt_nombre" required></td>
-            </tr>
-            <tr>
-                <td><label for="txt_nombre">Contraseña</label></td>
+                <td><label for="txt_nombre">Nombre De Usuario</label></td>
                 <td><input type="text" name="txt_nombre" id="txt_nombre" required></td>
             </tr>
             <a href="index.html">
@@ -119,7 +111,7 @@
         <div class="welcome-back">
             <div class="message">
                 <h2>Bienvenido/a</h2>
-                <p>Si aun no tienes una cuenta por favor registrese aqui</p>
+                <p>REGISTRESE AQUI PARA ACCEDER A DESCUENTOS ESPECIALES!</p>
                 <button class="btncolor1">Registrarse</button>
             </div>
         </div>
